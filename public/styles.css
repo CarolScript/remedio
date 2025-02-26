@@ -1,0 +1,138 @@
+/* Importação de Fonte Moderna */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* Estilo do Corpo */
+body {
+    background: #2b2b2b;
+    color: #333;
+    text-align: center;
+    padding: 20px;
+    transition: background 0.3s, color 0.3s;
+}
+
+/* Container Principal */
+.container {
+    max-width: 400px;
+    margin: auto;
+    padding: 20px;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s;
+}
+
+/* Título */
+h1 {
+    font-size: 22px;
+    color: #566d50; /* Verde Sarja */
+    font-weight: 600;
+}
+
+/* Subtítulo */
+.subtitulo {
+    font-size: 14px;
+    color: #777;
+    margin-bottom: 15px;
+}
+
+/* Botão de Ativação de Notificações */
+#ativar {
+    padding: 12px;
+    width: 100%;
+    background: #6d7f5f; /* Verde Sarja */
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+#ativar:hover {
+    background: #5a6b4d;
+}
+
+/* Cartões de Remédio */
+.med-card {
+    background: white;
+    padding: 15px;
+    border-radius: 10px;
+    margin-bottom: 15px;
+    box-shadow: 0 3px 5px rgba(0, 0, 0, 0.1);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: left;
+    border-left: 5px solid #6d7f5f; /* Borda verde sarja */
+}
+
+/* Nome do remédio */
+.med-info {
+    flex-grow: 1;
+    font-size: 16px;
+    font-weight: bold;
+    color: #444;
+}
+
+/* Horário */
+.med-horario {
+    font-size: 14px;
+    color: #777;
+    margin-top: 5px;
+}
+
+/* Botão de Marcar como Tomado */
+.btn {
+    padding: 8px 12px;
+    border: none;
+    border-radius: 8px;
+    background: #28a745;
+    color: white;
+    cursor: pointer;
+    font-size: 14px;
+    transition: all 0.3s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 90px;
+}
+
+.btn:hover {
+    background: #218838;
+}
+
+/* Se já tomou o remédio */
+.taken {
+    background: #d9534f !important;
+    text-decoration: line-through;
+}
+
+/* Mensagem informativa */
+.info {
+    font-size: 12px;
+    color: #888;
+}
+
+/* Responsividade */
+@media (max-width: 480px) {
+    .container {
+        max-width: 100%;
+        padding: 15px;
+    }
+    .med-card {
+        flex-direction: row;
+        align-items: center;
+    }
+    .btn {
+        min-width: 80px;
+        padding: 6px 10px;
+    }
+}
