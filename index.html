@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lembrete de Remédios 💖</title>
+    <link rel="manifest" href="manifest.json">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>💊 Meus Remédios</h1>
+        <p class="subtitulo">Cuide-se bem! Não esqueça nenhum horário. ❤️</p>
+
+        <!-- Botão para ativar notificações -->
+        <button id="ativar">🔔 Ativar Notificações</button>
+
+        <!-- Lista de remédios -->
+        <div id="medicamentos">
+            <!-- Os remédios serão carregados aqui dinamicamente pelo JavaScript -->
+        </div>
+
+        <p class="info">Clique no botão ao lado do remédio para marcar que já tomou.</p>
+    </div>
+
+    <!-- Firebase SDK -->
+    <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-messaging.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-firestore.js"></script>
+
+    <!-- Seu Script -->
+    <script src="script.js" defer></script>
+</body>
+</html>
